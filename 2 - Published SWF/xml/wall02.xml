@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<!-- SETTINGS -->
+	<settings>
+		
+		<!-- WALL SETTINGS -->
+		<wall3D>
+			<numRows>2</numRows>
+			<initRotationY>180</initRotationY>
+			<rotationOffsetX>15</rotationOffsetX>
+			<rotationOffsetY>0</rotationOffsetY>
+			<rotationOffsetZ>0</rotationOffsetZ>
+			<offsetX>0</offsetX>
+			<offsetY>0</offsetY>
+			<offsetZ>0</offsetZ>
+			<autoPlay>true</autoPlay>
+			<jumpNumColumns>3</jumpNumColumns>
+			<ghostItems>0</ghostItems>
+		</wall3D>
+		
+		<!-- THUMBNAIL SETTINGS -->
+		<thumb3D>
+			<maxWidth>161</maxWidth>
+			<maxHeight>108</maxHeight>
+			<border>1</border>
+			<backColor>0x3E3E3E</backColor>
+			<spacingX>10</spacingX>
+			<spacingY>10</spacingY>
+			<showFileTypeIcon>true</showFileTypeIcon>
+		</thumb3D>
+		
+		<!-- REFLECTIONS SETTINGS -->
+		<reflections>
+			<visible>true</visible>
+			<alpha>0.1</alpha>
+			<distance>2</distance>
+			<dropOff>1</dropOff>
+			<blurX>0</blurX>
+			<blurY>0</blurY>
+		</reflections>
+		
+	</settings>
+	
+	<!-- WALL ITEMS -->
+	<items>
+		
+		
+		
+		<!-- ITEM -->
+		<item>
+			<type>video</type>
+			<title><![CDATA[Video file]]></title>
+			<thumbnail>assets/image/thumbnails/09.jpg</thumbnail>
+			<tooltip><![CDATA[<span class="blu">Video:</span><br>Video file]]></tooltip>
+			<details>xml/details/video2.xml</details>
+			<purchase>true</purchase>
+			<download>false</download>
+		</item>
+		
+		
+		<!-- ITEM -->
+		<item>
+			<type>video</type>
+			<title><![CDATA[Video file]]></title>
+			<thumbnail>assets/image/thumbnails/09.jpg</thumbnail>
+			<tooltip><![CDATA[<span class="blu">Video:</span><br>Video file]]></tooltip>
+			<details>xml/details/video2.xml</details>
+			<purchase>true</purchase>
+			<download>false</download>
+		</item>
+		
+		
+		
+	</items>
+	
+</data>

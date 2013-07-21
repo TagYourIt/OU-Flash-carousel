@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<data>
+	
+	<!-- GENERAL SETTINGS -->
+	<settings>
+		
+		<!-- LAYOUT SETTINGS -->
+		<layout>
+			<width>100%</width>
+			<height>100%</height>
+			<minWidth>1024</minWidth>
+			<minHeight>768</minHeight>
+			<offsetX>0</offsetX>
+			<offsetY>360</offsetY>
+		</layout>
+		
+		<!-- MAIN MENU -->
+		<mainMenu>
+			<visible>true</visible>
+			<alignX>center</alignX>
+			<alignY>top</alignY>
+			<btnSpacing>2</btnSpacing>
+			<marginX>10</marginX>
+		</mainMenu>
+		
+		<!-- MAIN MENU BUTTON -->
+		<mainButton>
+			<height>32</height>
+			<corners tl="0" tr="0" bl="6" br="6" />
+		</mainButton>
+		
+		<!-- SUB MENU -->
+		<subMenu>
+			<alignX>left</alignX>
+			<spacingY>14</spacingY>
+			<height>32</height>
+			<btnSpacing>2</btnSpacing>
+			<marginX>4</marginX>
+			<corners tl="6" tr="6" bl="6" br="6" />
+			<size>autoSize</size><!-- autoSize, sameAsMain, notBiggerThanMain, notSmallerThanMain or absolute size in pixels -->
+		</subMenu>
+		
+		<!-- SUB MENU BUTTON -->
+		<subButton>
+			<height>24</height>
+			<corners tl="4" tr="4" bl="4" br="4" />
+		</subButton>
+		
+		<!-- TOOLBAR -->
+		<toolBar>
+			<visible>true</visible>
+			<alignX>center</alignX>
+			<alignY>bottom</alignY>
+			<marginX>0</marginX>
+			<marginY>15</marginY>
+		</toolBar>
+		
+		<!-- FULLSCREEN BUTTON -->
+		<fullScreenButton>
+			<visible>true</visible>
+			<offsetX>27</offsetX>
+			<offsetY>0</offsetY>
+		</fullScreenButton>
+		
+		<!-- PLAY BUTTON -->
+		<playButton>
+			<visible>true</visible>
+			<offsetX>0</offsetX>
+			<offsetY>0</offsetY>
+		</playButton>
+		
+		<!-- SCROLLBAR -->
+		<scrollBar>
+			<visible>true</visible>
+			<alignX>center</alignX>
+			<alignY>bottom</alignY>
+			<marginX>0</marginX>
+			<marginY>45</marginY>
+			<size>268</size>
+			<minScrollBtnSize>50</minScrollBtnSize>
+			<autoScrollAfter>0.5</autoScrollAfter>
+			<autoScrollDelay>0.05</autoScrollDelay>
+			<circularScroll>true</circularScroll>
+			<mouseWheelScroll>true</mouseWheelScroll>
+		</scrollBar>
+		
+		<!-- AUTOPLAY -->
+		<autoPlay>
+			<delay>1.5</delay>
+			<direction>forward</direction>
+			<pauseOnMouseOver>false</pauseOnMouseOver>
+			<resumeAfter>0.5</resumeAfter>
+		</autoPlay>
+		
+		<!-- SOUNDS -->
+		<sounds>
+			<volume>1</volume>
+			<mouseOver>assets/audio/ui/over.mp3</mouseOver>
+			<click>assets/audio/ui/click.mp3</click>
+			<thumb3DFlip>assets/audio/ui/flip.mp3</thumb3DFlip>
+		</sounds>
+		
+		<!-- DETAILS BOX -->
+		<detailsBox>
+			<initWidth>500</initWidth>
+			<initHeight>400</initHeight>
+			<topBtnsCorners tl="6" tr="6" bl="0" br="0" />
+			<topBtnsHeight>32</topBtnsHeight>
+			<topBtnsSpacingX>2</topBtnsSpacingX>
+			<navBtnsCorners tl="0" tr="6" bl="0" br="6" />
+			<purchaseBtn><![CDATA[Purchase Item]]></purchaseBtn>
+			<downloadBtn><![CDATA[Download Sample]]></downloadBtn>
+			<closeBtn><![CDATA[<b>X</b> Close]]></closeBtn>
+			<imageZoomPan>true</imageZoomPan>
+			<maxDescrHeight>120</maxDescrHeight>
+			<padding>3</padding>
+			<spacingY>3</spacingY>
+			<margin>10</margin>
+		</detailsBox>
+		
+	</settings>
+	
+	<!-- GLOBAL STYLE SHEET -->
+	<styleSheet>
+		<![CDATA[
+			.blu { font-size: 14; color: #7FCDFF; font-weight: bold; }
+			.sml { font-size: 11; color: #A1A1A1; }
+		]]>
+	</styleSheet>
+	
+	<!-- TOOLTIPS -->
+	<toolTips>
+		
+		<!-- SCROLLBAR TOOLTIPS -->
+		<scrollBar>
+			<arrowBtn1 mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Move Left]]></arrowBtn1>
+			<scrollTrack mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Drag to Move]]></scrollTrack>
+			<arrowBtn2 mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Move Right]]></arrowBtn2>
+		</scrollBar>
+		
+		<!-- TOOLBAR TOOLTIPS -->
+		<toolBar>
+			<playBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Start Auto Play]]></playBtn>
+			<pauseBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Stop Auto Play]]></pauseBtn>
+			<fullScreenBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Go Full Screen]]></fullScreenBtn>
+			<normalScreenBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Exit Full Screen]]></normalScreenBtn>
+		</toolBar>
+		
+		<!-- OTHER TOOLTIPS CONFIGURATION -->
+		<configOnly>
+			<thumbnail mouseFollow="true" offsetY="30" offsetX="5" position="bellow" showDelay="0.2" stayFor="5"/>
+		</configOnly>
+		
+		<!-- DETAILS BOX TOOLTIPS  -->
+		<detailsBox>
+			<nextBtn mouseFollow="true" offsetY="30" offsetX="5" position="bellow" showDelay="0.4" stayFor="5"><![CDATA[<span class="blu">Next:</span> %TITLE%]]></nextBtn>
+			<prevBtn mouseFollow="true" offsetY="30" offsetX="5" position="bellow" showDelay="0.4" stayFor="5"><![CDATA[<span class="blu">Prev:</span><br/>%TITLE%]]></prevBtn>
+			<zoomIn mouseFollow="true" offsetY="22" offsetX="10" position="bellow" showDelay="0.1" stayFor="2"><![CDATA[Double click to zoom in]]></zoomIn>
+			<zoomOut mouseFollow="true" offsetY="22" offsetX="10" position="bellow" showDelay="0.1" stayFor="2"><![CDATA[Double click to zoom out<br/><span class="sml">Mouse move to pan</span>]]></zoomOut>
+		</detailsBox>
+		
+		<playbackControls>
+			<playBtn mouseFollow="false" offsetY="6" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Play]]></playBtn>
+			<pauseBtn mouseFollow="false" offsetY="6" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Pause]]></pauseBtn>
+			<replayBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Replay]]></replayBtn>
+			<fullScreenBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Video Fullscreen]]></fullScreenBtn>
+			<normalScreenBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Exit Full Screen]]></normalScreenBtn>
+			<albumartBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Albumart]]></albumartBtn>
+			<oscilloscopeBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Oscilloscope]]></oscilloscopeBtn>
+			<spectrumBtn mouseFollow="false" offsetY="10" offsetX="0" position="above" showDelay="0.4" stayFor="5"><![CDATA[Spectrum]]></spectrumBtn>
+		</playbackControls>
+		
+	</toolTips>
+	
+	<!-- CONTENT -->
+	<content>
+		
+		<!-- CATEGORY -->
+		<category selected="true">
+			<title><![CDATA[Web Portfolio]]></title>
+			<content>
+				
+				<subCategory selected="true">
+					<title><![CDATA[wall 1]]></title>
+					<content>xml/wall01.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[wall2]]></title>
+					<content>xml/wall02.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[Winter 2008]]></title>
+					<content>xml/wall03.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[At the mountains]]></title>
+					<content>xml/wall04.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[Summer 2009]]></title>
+					<content>xml/wall05.xml</content>
+				</subCategory>
+				
+			</content>
+		</category>
+		
+		<!-- CATEGORY -->
+		<category>
+			<title><![CDATA[Web Templates]]></title>
+			<content>
+				
+				<subCategory selected="true">
+					<title><![CDATA[April 2007]]></title>
+					<content>xml/wall04.xml</content>
+				</subCategory>
+				
+				
+				<subCategory>
+					<title><![CDATA[February 2000]]></title>
+					<content>xml/wall02.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[January 2010]]></title>
+					<content>xml/wall05.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[February 2000]]></title>
+					<content>xml/wall03.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[January 2010]]></title>
+					<content>xml/wall01.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[February 2000]]></title>
+					<content>xml/wall02.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[January 2010]]></title>
+					<content>xml/wall04.xml</content>
+				</subCategory>
+				
+			</content>
+		</category>
+		
+		<!-- CATEGORY -->
+		<category>
+			<title><![CDATA[Vacation Photos]]></title>
+			<content>
+				
+				<subCategory>
+					<title><![CDATA[Winter 2008]]></title>
+					<content>xml/wall04.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[At the mountains]]></title>
+					<content>xml/wall01.xml</content>
+				</subCategory>
+				
+			</content>
+		</category>
+		
+		<!-- CATEGORY -->
+		<category>
+			<title><![CDATA[Corporate ID]]></title>
+			<content>
+				
+				<subCategory>
+					<title><![CDATA[Winter 2008]]></title>
+					<content>xml/wall03.xml</content>
+				</subCategory>
+				
+				<subCategory>
+					<title><![CDATA[At the mountains]]></title>
+					<content>xml/wall02.xml</content>
+				</subCategory>
+				
+			</content>
+		</category>
+		
+		<!-- CATEGORY -->
+		<category>
+			<title><![CDATA[Video Gallery]]></title>
+			<content>xml/wall05.xml</content>
+		</category>
+		
+	</content>
+	
+</data>

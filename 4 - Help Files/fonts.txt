@@ -1,0 +1,13 @@
+Non-standard free fonts used
+============================ 
+
+playback.ttf
+============
+The FontStruction "playback" 
+(http://fontstruct.fontshop.com/fontstructions/show/336259) by Adrian Bota, manager of the Oxylus stock flash team, is 
+licensed under a Creative Commons Attribution Share Alike license
+ (http://creativecommons.org/licenses/by-sa/3.0/).
+
+============
+Font name: Aller
+Font download link: http://www.fontsquirrel.com/fonts/Aller
